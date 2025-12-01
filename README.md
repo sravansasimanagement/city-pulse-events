@@ -94,7 +94,7 @@ The optimized build will be located in the build/ directory.
 
 ### Video Demo
 Watch the live demo video here:  
-[City Pulse Demo Video]([https://drive.google.com/file/d/1-3AzeFDKtqom7HDMcJBbNXBqCLM505mr/view?usp=drive_link])
+[City Pulse Demo Video](https://drive.google.com/file/d/1-3AzeFDKtqom7HDMcJBbNXBqCLM505mr/view?usp=sharing)
 
 
 ### Screenshots
