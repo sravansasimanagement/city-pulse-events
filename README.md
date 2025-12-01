@@ -88,4 +88,30 @@ To create a production-ready build of the app, run: npm run build
 
 The optimized build will be located in the build/ directory.
 
+---
+
+## Demo / Screenshots
+
+### Video Demo
+You can click the below link directly:
+
+[![City Pulse]([https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://drive.google.com/file/d/1-3AzeFDKtqom7HDMcJBbNXBqCLM505mr/view?usp=sharing))
+
+
+### Screenshots
+ Add screenshots for clarity:
+<img width="1144" height="717" alt="event_login" src="https://github.com/user-attachments/assets/524bf0ff-a361-4ff7-9aa7-09f3d86f508b" />
+
+
+<img width="1164" height="718" alt="event_signup" src="https://github.com/user-attachments/assets/c114488e-c5a0-4ddd-af85-465bb032d54a" />
+
+<img width="1163" height="760" alt="event_splash" src="https://github.com/user-attachments/assets/6c425302-7d63-43fc-b3c2-09aefc497e46" />
+
+<img width="1154" height="713" alt="event_home" src="https://github.com/user-attachments/assets/0c698897-2792-46bd-83ca-ae03fb6ff125" />
+
+<img width="1156" height="717" alt="even_details" src="https://github.com/user-attachments/assets/93ea2f7b-7f93-4a88-914d-cc1afe79c36b" />
+
+<img width="1181" height="804" alt="event_profile" src="https://github.com/user-attachments/assets/4636d7ba-a09f-4b43-b132-dea0bd269e5e" />
+
+
 
