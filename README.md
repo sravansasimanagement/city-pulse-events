@@ -9,7 +9,7 @@ The app integrates **Firebase Authentication**, **Firestore**, **Material UI**, 
 ## Features
 
 ### Authentication
-- User registration (Email + Password)
+- User registration (Name, Contact, NumberEmail, Password)
 - Login / Logout
 - Firebase-based user management
 - Stores additional user fields (Full Name, Phone Number)
