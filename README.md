@@ -61,7 +61,9 @@ npm install
 
 ### .env setup
 
-Create a .env file in the project root with your Firebase keys:
+Create a .env file in the project root with your Firebase keys and API keys:
+
+VITE_TM_API_KEY=API_KEY
 
 REACT_APP_FIREBASE_API_KEY=YOUR_API_KEY
 
