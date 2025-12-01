@@ -1,73 +1,84 @@
-# React + TypeScript + Vite
+# City Pulse – Local Events Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+City Pulse is a **React + TypeScript** web application that allows users to explore local events with features such as searching, viewing event details, marking favorites, authentication, and user profile management.
 
-Currently, two official plugins are available:
+The app integrates **Firebase Authentication**, **Firestore**, **Material UI**, and **React Router**.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Authentication
+- User registration (Email + Password)
+- Login / Logout
+- Firebase-based user management
+- Stores additional user fields (Full Name, Phone Number)
 
-## Expanding the ESLint configuration
+### Events & Maps
+- Event listing from external API
+- Event details page
+- Google Maps preview (Material UI styled)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Favorites
+- Add/remove favorite events
+- Persist favorites using `localStorage`
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### User Profile
+- Profile picture avatar
+- Displays user full name & phone number
+- Favorite events listed with delete option
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### UI & UX
+- Material UI styled components
+- Splash screen with animation
+- Clean & responsive layout
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+| Layer | Technology |
+|-------|------------|
+| Frontend | React + TypeScript |
+| UI Framework | Material UI (MUI) |
+| API Calls | Fetch / Axios |
+| Auth | Firebase Authentication |
+| Data Storage | LocalStorage |
+| Routing | React Router v6 |
+| Build Tool | Vite / CRA |
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+##  Project Setup Instructions
+
+Follow these steps to run City Pulse locally.
+
+###  Clone the Repository
+
+git clone https://github.com/sravansasimanagement/city-pulse-events.git
+cd city-pulse-events
+npm install
+
+### .env setup
+
+Create a .env file in the project root with your Firebase keys:
+
+REACT_APP_FIREBASE_API_KEY=YOUR_API_KEY
+REACT_APP_FIREBASE_AUTH_DOMAIN=YOUR_AUTH_DOMAIN
+REACT_APP_FIREBASE_PROJECT_ID=YOUR_PROJECT_ID
+REACT_APP_FIREBASE_STORAGE_BUCKET=YOUR_STORAGE_BUCKET
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=YOUR_MESSAGING_SENDER_ID
+REACT_APP_FIREBASE_APP_ID=YOUR_APP_ID
+
+
+### Running the App
+To run the app in development mode, use: npm run dev
+
+The app will be available at http://localhost:5173/
+
+### Building the App
+To create a production-ready build of the app, run: npm run build
+
+The optimized build will be located in the build/ directory.
+
+
